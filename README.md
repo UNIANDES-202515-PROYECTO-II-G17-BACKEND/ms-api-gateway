@@ -17,4 +17,3 @@ poetry run pytest -q
 Endpoints:
 - GET /health
 - GET /ready
-- 
