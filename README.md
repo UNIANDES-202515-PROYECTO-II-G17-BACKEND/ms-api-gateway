@@ -3,14 +3,14 @@
 Microservicio FastAPI en Python 3.13 con despliegue en Cloud Run (GCP).
 
 ## Desarrollo
-`ash
+`bash
 poetry install
 cp .env.example .env
 poetry run uvicorn app:app --reload --port 8080
 `
 
 ## Tests
-`ash
+`bash
 poetry run pytest -q
 `
 
