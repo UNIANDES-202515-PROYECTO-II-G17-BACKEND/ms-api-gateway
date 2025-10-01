@@ -1,0 +1,17 @@
+﻿name: ci-cd
+on:
+  push:         { branches: ["**"] }
+  pull_request: { branches: ["**"] }
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  pipeline:
+    uses: UNIANDES-202515-PROYECTO-II-G17-BACKEND/.github/.github/workflows/python-service.yml@main
+    with:
+      service_name: ${{ github.event.repository.name }}
+      python_version: '3.13'
+    secrets: inherit
+
