@@ -25,6 +25,7 @@ class Settings(BaseSettings):
     BT_INSTANCE: str | None = None
     GCS_BUCKET: str | None = None
 
+
     class Config:
         env_file = ".env"
 
